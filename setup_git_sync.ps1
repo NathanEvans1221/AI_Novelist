@@ -3,16 +3,22 @@
 
 $BackupUrl = "git@github.com:edwin45168899/AI_Novelist.git"
 $MainUrl = "git@github.com-chiisen:chiisen/AI_Novelist.git"
+$MainUrl1 = "git@github.com-edwiin1688:edwiin1688/AI_Novelist.git"
+$MainUrl2 = "git@github.com-NathanEvans1221:NathanEvans1221/AI_Novelist.git"
 
 Write-Output "正在設定 Git 遠端同步..."
 Write-Output "備份遠端: $BackupUrl"
 Write-Output "主要遠端: $MainUrl"
+Write-Output "主要遠端1: $MainUrl1"
+Write-Output "主要遠端2: $MainUrl2"
 
 # 1. 加入 backup repo 到 origin 的 push list
 git remote set-url --add --push origin $BackupUrl
 
 # 2. 加入主要 repo 到 origin 的 push list
 git remote set-url --add --push origin $MainUrl
+git remote set-url --add --push origin $MainUrl1
+git remote set-url --add --push origin $MainUrl2
 
 Write-Output "設定完成。目前的 remote 設定如下："
 git remote -v
