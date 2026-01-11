@@ -36,11 +36,11 @@ git push -u origin main
 ## 一次同步多個分支
 設定【自訂遠端】
 ```bash
-git remote set-url --add --push edwin45168899 git@github.com/edwin45168899/AI_Novelist.git
+git remote set-url --add --push edwin45168899 git@github.com:edwin45168899/AI_Novelist.git
 
 # 刪除 git remote set-url 設定
 ## push
-git remote set-url --delete --push origin git@github.com/edwin45168899/AI_Novelist.git
+git remote set-url --delete --push origin git@github.com:edwin45168899/AI_Novelist.git
 ## fetch
 git remote set-url edwin45168899 git@github.com:edwin45168899/AI_Novelist.git
 
