@@ -48,7 +48,7 @@ git remote set-url edwin45168899 git@github.com:edwin45168899/AI_Novelist.git
 # 查看 git remote set-url 設定
 git remote -v
 ```
-推送所有分支
+推送 origin 分支，但是 origin 有多一個 origin  git@github.com:edwin45168899/AI_Novelist.git (push)
 ```bash
 git push
 ```
