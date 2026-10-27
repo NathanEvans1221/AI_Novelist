@@ -2,6 +2,8 @@
 
 > 本文件提供給 AI Agent 讀取的標準作業程序 (SOP)，用於把任務從專案文件導入並持續維護 GitHub Projects v2 看板。
 > This document is a SOP for AI agents to import tasks from project docs into and maintain a GitHub Projects v2 board.
+>
+> 註：本文件為通用維運 SOP，與「零號協議」小說創作系統無直接關聯；第 6 節範例引用的是 `cc-cli-go` 專案。
 
 ---
 

@@ -5,7 +5,7 @@
 # 語法：git remote add <自訂名稱> <專案的路徑或URL>
 git remote add edwin45168899 git@github.com:edwin45168899/AI_Novelist.git
 ```
-`git@github.com:edwin45168899/AI_Novelist.git` 查一下 C:\Users\chiis\.ssh\config 裡面的設定
+若使用 SSH host alias（例如 `git@github.com-chiisen:...`），請先確認 `~/.ssh/config`（Windows：`%USERPROFILE%\.ssh\config`）已設定對應的 Host 與 IdentityFile。
 
 ## 查看新增的【自訂遠端】
 ```bash
@@ -41,16 +41,16 @@ git remote set-url --add --push origin git@github.com:edwin45168899/AI_Novelist.
 # 預設沒設定 origin，可能還要設定一次
 git remote set-url --add --push origin git@github.com-chiisen:chiisen/AI_Novelist.git
 
-# 刪除 git remote set-url 設定
-## push
+# 刪除 origin 的 push URL
 git remote set-url --delete --push origin git@github.com:edwin45168899/AI_Novelist.git
-## fetch
+
+# 設定自訂遠端（edwin45168899）的 fetch URL
 git remote set-url edwin45168899 git@github.com:edwin45168899/AI_Novelist.git
 
 # 查看 git remote set-url 設定
 git remote -v
 ```
-推送 origin 分支，但是 origin 有多一個 origin  git@github.com:edwin45168899/AI_Novelist.git (push)
+執行 `git push` 時，會依序推送到 origin 設定的多個 push URL（例如 `git@github.com:edwin45168899/AI_Novelist.git`）。
 ```bash
 git push
 ```
